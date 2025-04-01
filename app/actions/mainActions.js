@@ -1,11 +1,14 @@
 // app/actions/mainActions.js
 import { cache } from "react";
 
+// استخدام متغير البيئة لتحديد رابط الـ API
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+
 export const fetchFeaturedProducts = cache(async () => {
   try {
     console.time("Fetch Featured Products");
 
-    const response = await fetch("http://localhost:3000/api/products?featured=true", {
+    const response = await fetch(`${API_URL}/api/products?featured=true`, {
       method: "GET",
       next: { revalidate: 300 }, // 5 دقايق - نفس الـ revalidate بتاعك
     });
