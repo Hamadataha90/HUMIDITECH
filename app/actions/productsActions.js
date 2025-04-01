@@ -3,7 +3,7 @@
 // جلب منتج محدد بناءً على الـ ID من الـ API Route (بدون body_html أو metafields)
 export async function fetchProductById(id) {
   try {
-    const response = await fetch(`https://humiditech.vercel.app/api/products?id=${id}`, {
+    const response = await fetch(`http://localhost:3000/api/products?id=${id}`, {
       method: "GET",
       next: { revalidate: 300 }, // Revalidate every 5 minutes
     });
