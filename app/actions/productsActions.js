@@ -1,9 +1,12 @@
 "use server";
 
+// استخدام متغير البيئة لتحديد رابط الـ API
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+
 // جلب منتج محدد بناءً على الـ ID من الـ API Route (بدون body_html أو metafields)
 export async function fetchProductById(id) {
   try {
-    const response = await fetch(`http://localhost:3000/api/products?id=${id}`, {
+    const response = await fetch(`${API_URL}/api/products?id=${id}`, {
       method: "GET",
       next: { revalidate: 300 }, // Revalidate every 5 minutes
     });
@@ -26,7 +29,7 @@ export async function fetchProductById(id) {
 // جلب كل المنتجات من الـ API Route (بدون body_html أو metafields)
 export async function fetchProducts() {
   try {
-    const response = await fetch("http://localhost:3000/api/products", {
+    const response = await fetch(`${API_URL}/api/products`, {
       method: "GET",
       next: { revalidate: 300 }, // Revalidate every 5 minutes
     });
