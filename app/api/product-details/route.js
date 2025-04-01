@@ -2,7 +2,7 @@
 const SHOPIFY_API_BASE = "https://humidityzone.myshopify.com/admin/api/2023-10";
 const SHOPIFY_HEADERS = {
   "Content-Type": "application/json",
-  "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_API_ACCESS_TOKEN,
+  "X-Shopify-Access-Token": process.env.NEXT_PUBLIC_SHOPIFY_ADMIN_API_ACCESS_TOKEN,
 };
 
 // راوت لجلب التفاصيل التقيلة (body_html, images, metafields)
