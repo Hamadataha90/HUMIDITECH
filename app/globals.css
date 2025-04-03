@@ -50,7 +50,7 @@ body {
 .col-details {
   scrollbar-width: none;
   -ms-overflow-style: none;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .col-details::-webkit-scrollbar {
@@ -84,7 +84,7 @@ body {
 
 /* 🚚 Free shipping banner */
 .free-shipping-banner {
-  background: linear-gradient(135deg, var(--primary-color), #dac3bc);
+  background: linear-gradient(135deg, #ef9d89, #feb47b);
   color: #fff;
   font-size: 1.125rem; /* 18px */
   font-weight: bold;
