@@ -50,7 +50,7 @@ body {
 .col-details {
   scrollbar-width: none;
   -ms-overflow-style: none;
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 .col-details::-webkit-scrollbar {
