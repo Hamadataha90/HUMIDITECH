@@ -82,7 +82,7 @@ const NavBar = () => {
         onClick={() => handleNavigation("/")}
         style={{ color: "#1a3c34", fontWeight: "bold", paddingLeft: "15px", cursor: "pointer" }}
       >
-        Paws Trip
+        Humidity-Tech
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
