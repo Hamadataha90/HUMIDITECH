@@ -120,7 +120,7 @@ const ProductCard = ({ product }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div style={{ position: "relative", width: "100%", height: "400px" }}>
+      <div style={{ position: "relative", width: "100%", height: "20rem"" }}>
         {loadingImages ? (
           <div style={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
             <Spinner animation="border" variant="primary" />
