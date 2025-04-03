@@ -1,3 +1,18 @@
+/* إعادة ضبط القيم الافتراضية وتطبيق إخفاء الـ Scrollbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer & Edge */
+}
+
+/* إخفاء الـ Scrollbar في Webkit Browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
 :root {
   --background: white;
   
