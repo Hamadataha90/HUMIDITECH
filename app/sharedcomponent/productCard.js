@@ -116,7 +116,7 @@ const ProductCard = ({ product }) => {
   return (
     <Card
       className="h-100 shadow-sm text-center d-flex flex-column position-relative"
-      style={{ cursor: "pointer", overflow: "hidden" }}
+      style={{ cursor: "pointer", overflow: "hidden",  height: "20rem" }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
