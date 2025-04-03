@@ -99,10 +99,6 @@ body {
   animation: pulse 1.5s infinite alternate;
 }
 
-/* Dark mode support for banner */
-[data-theme="dark"] .free-shipping-banner {
-  background: linear-gradient(135deg, #222, #444);
-}
 
 /* ✨ Pulse animation */
 @keyframes pulse {
