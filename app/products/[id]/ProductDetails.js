@@ -305,7 +305,7 @@ export default function ProductDetails({ product }) {
           </div>
         </Col>
 
-        <Col md={7} xs={12} className="px-4 py-2 col-details">
+        <Col md={6} xs={12} className="px-4 py-2 col-details">
           <h1 className="mb-2">{product.title}</h1>
           <Badge bg="secondary" className="mb-3">{product.product_type || "General"}</Badge>
 
