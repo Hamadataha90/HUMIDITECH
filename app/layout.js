@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           <NavBar />
           <FreeShippingBanner
             title="Free Shipping on all Orders"
-            className="free-shipping-banner bg-secondary text-white"
+            className="free-shipping-banner  text-white"
           />
           {children}
           <Footer />
