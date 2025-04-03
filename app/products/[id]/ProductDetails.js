@@ -274,7 +274,7 @@ export default function ProductDetails({ product }) {
   return (
     <Container fluid className="mt-5">
       <Row className="align-items-start">
-        <Col xs={12} md={4} className="d-block" style={isSticky ? { position: "sticky", top: "0", height: "90vh", overflowY: "auto", maxHeight: "100vh" } : {}}>
+        <Col xs={12} md={4} className="d-block" style={isSticky ? { position: "sticky", top: "0", height: "100vh", overflowY: "overlay", maxHeight: "100vh" } : {}}>
           <div className="text-center">
             <div style={{ width: "100%", maxHeight: "800px", overflow: "hidden" }}>
               {loadingDetails ? (
